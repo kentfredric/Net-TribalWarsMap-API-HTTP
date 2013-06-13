@@ -50,6 +50,8 @@ In order to produce
 
 =back
 
+Usage:
+
     use Net::TribalWarsMap::API::HTTP;
 
     my $ua = Net::TribalWarsMap::API::HTTP->new(
