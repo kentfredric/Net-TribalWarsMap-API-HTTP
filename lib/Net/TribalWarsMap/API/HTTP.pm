@@ -69,11 +69,24 @@ has chi => (
 );
 
 
+has agent => (
+    is => ro =>,
+    lazy => 1,
+    builder => sub {
+        my ( $self ) = @_;
+        if ( __PACKAGE__->VERSION ){
+            return __PACKAGE__ . '/' . __PACKAGE__->version;
+        }
+        return __PACKAGE__ . '/dev';
+    }
+);
+
+
 has mech => (
   is      => ro => lazy => 1,
   builder => sub {
     require WWW::Mechanize::Cached;
-    return WWW::Mechanize::Cached->new( cache => $_[0]->chi, );
+    return WWW::Mechanize::Cached->new( cache => $_[0]->chi, agent => $_[0]->agent  );
   },
 );
 
@@ -167,6 +180,8 @@ See L<< C<HTTP::Tiny>|HTTP::Tiny >> and L<< C<HTTP::Tiny::Mech>|HTTP::Tiny::Mech
 =head2 C<cache_name>
 
 =head2 C<chi>
+
+=head2 agent
 
 =head2 C<mech>
 
