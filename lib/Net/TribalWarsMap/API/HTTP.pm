@@ -70,15 +70,15 @@ has chi => (
 
 
 has agent => (
-    is => ro =>,
-    lazy => 1,
-    builder => sub {
-        my ( $self ) = @_;
-        if ( __PACKAGE__->VERSION ){
-            return __PACKAGE__ . '/' . __PACKAGE__->VERSION;
-        }
-        return __PACKAGE__ . '/dev';
+  is      => ro =>,
+  lazy    => 1,
+  builder => sub {
+    my ($self) = @_;
+    if ( __PACKAGE__->VERSION ) {
+      return __PACKAGE__ . '/' . __PACKAGE__->VERSION;
     }
+    return __PACKAGE__ . '/dev';
+  }
 );
 
 
@@ -86,7 +86,7 @@ has mech => (
   is      => ro => lazy => 1,
   builder => sub {
     require WWW::Mechanize::Cached;
-    return WWW::Mechanize::Cached->new( cache => $_[0]->chi, agent => $_[0]->agent  );
+    return WWW::Mechanize::Cached->new( cache => $_[0]->chi, agent => $_[0]->agent );
   },
 );
 
