@@ -1,12 +1,12 @@
 NAME
-    Net::TribalWarsMap::API::HTTP - HTTP User Agent For TribalWarsMap.com
+    Net::TribalWarsMap::API::HTTP - HTTP User Agent For "TribalWarsMap.com"
 
 VERSION
     version 0.1.0
 
 SYNOPSIS
     This module is mostly a common shared component for a bunch of
-    "TribalWarsMap.com" <http://TribalWarsMap.com> API Modules.
+    "TribalWarsMap.com" <http://tribalwarsmap.com> API Modules.
 
     Its just a huge glue layer gluing together
 
@@ -63,6 +63,9 @@ COPYRIGHT AND LICENSE
 POD ERRORS
     Hey! The above document had some coding errors, which are explained
     below:
+
+    Around line 106:
+        Unterminated L< ... > sequence
 
     Around line 149:
         You forgot a '=back' before '=head1'

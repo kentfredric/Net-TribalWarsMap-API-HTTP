@@ -12,7 +12,7 @@ my %module_build_args = (
   "configure_requires" => {
     "Module::Build" => "0.4005"
   },
-  "dist_abstract" => "HTTP User Agent For TribalWarsMap.com",
+  "dist_abstract" => "HTTP User Agent For L<< C<TribalWarsMap.com>|http://tribalwarsmap.com >",
   "dist_author" => [
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
