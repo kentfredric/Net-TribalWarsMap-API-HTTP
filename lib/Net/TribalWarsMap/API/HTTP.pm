@@ -111,7 +111,7 @@ version 0.1.0
 
 =head1 SYNOPSIS
 
-This module is mostly a common shared component for a bunch of L<< C<TribalWarsMap.com>|TribalWarsMap.com >> API Modules.
+This module is mostly a common shared component for a bunch of L<< C<TribalWarsMap.com>|http://TribalWarsMap.com >> API Modules.
 
 Its just a huge glue layer gluing together 
 
