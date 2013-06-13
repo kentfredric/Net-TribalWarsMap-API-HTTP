@@ -10,7 +10,7 @@ BEGIN {
   $Net::TribalWarsMap::API::HTTP::VERSION = '0.1.0';
 }
 
-# ABSTRACT: HTTP User Agent For L<< C<TribalWarsMap.com>|http://tribalwarsmap.com >
+# ABSTRACT: HTTP User Agent For L<< C<TribalWarsMap.com>|http://tribalwarsmap.com >>
 
 
 
@@ -103,7 +103,7 @@ __END__
 
 =head1 NAME
 
-Net::TribalWarsMap::API::HTTP - HTTP User Agent For L<< C<TribalWarsMap.com>|http://tribalwarsmap.com >
+Net::TribalWarsMap::API::HTTP - HTTP User Agent For L<< C<TribalWarsMap.com>|http://tribalwarsmap.com >>
 
 =head1 VERSION
 

@@ -1,5 +1,5 @@
 ---
-abstract: 'HTTP User Agent For L<< C<TribalWarsMap.com>|http://tribalwarsmap.com >'
+abstract: 'HTTP User Agent For L<< C<TribalWarsMap.com>|http://tribalwarsmap.com >>'
 author:
   - 'Kent Fredric <kentfredric@gmail.com>'
 build_requires:
