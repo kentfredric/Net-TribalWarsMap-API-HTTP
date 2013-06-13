@@ -7,7 +7,7 @@ VERSION
 
 SYNOPSIS
     This module is mostly a common shared component for a bunch of
-    "TribalWarsMap.com" <http://tribalwarsmap.com> API Modules.
+    "TribalWarsMap.com" <http://tribalwarsmap.com> "API" Modules.
 
     Its just a huge glue layer gluing together
 
