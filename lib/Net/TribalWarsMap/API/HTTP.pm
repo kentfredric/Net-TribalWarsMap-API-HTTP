@@ -130,7 +130,7 @@ has chi => (
   },
 );
 
-=attr agent
+=attr C<agent>
 
 =cut
 

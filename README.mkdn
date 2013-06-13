@@ -53,7 +53,7 @@ See [`HTTP::Tiny`](http://search.cpan.org/perldoc?HTTP::Tiny) and [`HTTP::Tiny::
 
 ## `chi`
 
-## agent
+## `agent`
 
 ## `mech`
 
