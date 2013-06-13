@@ -10,7 +10,7 @@ BEGIN {
   $Net::TribalWarsMap::API::HTTP::VERSION = '0.1.0';
 }
 
-# ABSTRACT: HTTP UA For TribalWars Map
+# ABSTRACT: HTTP User Agent For TribalWarsMap.com
 
 
 
@@ -103,7 +103,7 @@ __END__
 
 =head1 NAME
 
-Net::TribalWarsMap::API::HTTP - HTTP UA For TribalWars Map
+Net::TribalWarsMap::API::HTTP - HTTP User Agent For TribalWarsMap.com
 
 =head1 VERSION
 
@@ -111,7 +111,7 @@ version 0.1.0
 
 =head1 SYNOPSIS
 
-This module is mostly a common shared component for a buch of TW MAP API Modules.
+This module is mostly a common shared component for a bunch of L<< C<TribalWarsMap.com>|TribalWarsMap.com >> API Modules.
 
 Its just a huge glue layer gluing together 
 

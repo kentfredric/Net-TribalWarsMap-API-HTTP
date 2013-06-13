@@ -1,12 +1,12 @@
 NAME
-    Net::TribalWarsMap::API::HTTP - HTTP UA For TribalWars Map
+    Net::TribalWarsMap::API::HTTP - HTTP User Agent For TribalWarsMap.com
 
 VERSION
     version 0.1.0
 
 SYNOPSIS
-    This module is mostly a common shared component for a buch of TW MAP API
-    Modules.
+    This module is mostly a common shared component for a bunch of
+    "TribalWarsMap.com" API Modules.
 
     Its just a huge glue layer gluing together
 
