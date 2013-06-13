@@ -127,6 +127,8 @@ Its just a huge glue layer gluing together
 
 =item * L<< C<File::Spec>|File::Spec >>
 
+=back
+
 In order to produce
 
 =over 4
@@ -148,7 +150,7 @@ In order to produce
 
 =head1 METHODS
 
-=head2 get
+=head2 C<get>
 
     my $result = $ua->get( $url );
 
@@ -156,19 +158,19 @@ See L<< C<HTTP::Tiny>|HTTP::Tiny >> and L<< C<HTTP::Tiny::Mech>|HTTP::Tiny::Mech
 
 =head1 ATTRIBUTES
 
-=head2 tmp_root
+=head2 C<tmp_root>
 
-=head2 tw_suffix
+=head2 C<tw_suffix>
 
-=head2 tw_root
+=head2 C<tw_root>
 
-=head2 cache_name
+=head2 C<cache_name>
 
-=head2 chi
+=head2 C<chi>
 
-=head2 mech
+=head2 C<mech>
 
-=head2 ht_tiny
+=head2 C<ht_tiny>
 
 =begin MetaPOD::JSON v1.1.0
 

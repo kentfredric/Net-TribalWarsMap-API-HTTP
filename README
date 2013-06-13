@@ -21,36 +21,36 @@ SYNOPSIS
 
     *   "File::Spec"
 
-        In order to produce
+    In order to produce
 
-        *   A Cached HTTP User Agent
+    *   A Cached HTTP User Agent
 
-        *   With a shared cache in "/tmp/perl-Net-TribalWarsMap-API.cache/"
+    *   With a shared cache in "/tmp/perl-Net-TribalWarsMap-API.cache/"
 
-        *   With a per instance key set for
-            "/tmp/perl-Net-TribalWarsMap-API.cache/*"
+    *   With a per instance key set for
+        "/tmp/perl-Net-TribalWarsMap-API.cache/*"
 
-            use Net::TribalWarsMap::API::HTTP;
+        use Net::TribalWarsMap::API::HTTP;
 
-            my $ua = Net::TribalWarsMap::API::HTTP->new(
-                # /tmp/perl-Net-TribalWarsMap-API.cache/foo
-                cache_name => 'foo'
-            );
+        my $ua = Net::TribalWarsMap::API::HTTP->new(
+            # /tmp/perl-Net-TribalWarsMap-API.cache/foo
+            cache_name => 'foo'
+        );
 
 METHODS
-  get
+  "get"
         my $result = $ua->get( $url );
 
     See "HTTP::Tiny" and "HTTP::Tiny::Mech" for details
 
 ATTRIBUTES
-  tmp_root
-  tw_suffix
-  tw_root
-  cache_name
-  chi
-  mech
-  ht_tiny
+  "tmp_root"
+  "tw_suffix"
+  "tw_root"
+  "cache_name"
+  "chi"
+  "mech"
+  "ht_tiny"
 AUTHOR
     Kent Fredric <kentfredric@gmail.com>
 
@@ -60,11 +60,4 @@ COPYRIGHT AND LICENSE
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
-
-POD ERRORS
-    Hey! The above document had some coding errors, which are explained
-    below:
-
-    Around line 149:
-        You forgot a '=back' before '=head1'
 
