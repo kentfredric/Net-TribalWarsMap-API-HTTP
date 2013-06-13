@@ -30,6 +30,10 @@ requires:
   perl: v5.10.0
   strict: 0
   warnings: 0
+resources:
+  bugtracker: https://github.com/kentfredric/Net-TribalWarMap-API-HTTP/issues
+  homepage: https://github.com/kentfredric/Net-TribalWarMap-API-HTTP
+  repository: https://github.com/kentfredric/Net-TribalWarMap-API-HTTP.git
 version: 0.1.0
 x_BuiltWith:
   modules:

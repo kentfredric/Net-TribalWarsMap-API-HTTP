@@ -75,10 +75,10 @@ has agent => (
   builder => sub {
     my ($self) = @_;
     if ( __PACKAGE__->VERSION ) {
-      return __PACKAGE__ . '/' . __PACKAGE__->VERSION;
+      return __PACKAGE__ . q[/] . __PACKAGE__->VERSION;
     }
-    return __PACKAGE__ . '/dev';
-  }
+    return __PACKAGE__ . q[/dev];
+  },
 );
 
 
