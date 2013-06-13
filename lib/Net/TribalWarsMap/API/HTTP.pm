@@ -4,7 +4,7 @@ use warnings;
 
 package Net::TribalWarsMap::API::HTTP;
 
-# ABSTRACT: HTTP UA For TribalWars Map
+# ABSTRACT: HTTP User Agent For L<< C<TribalWarsMap.com>|http://tribalwarsmap.com >>
 
 =begin MetaPOD::JSON v1.1.0
 
@@ -16,13 +16,13 @@ package Net::TribalWarsMap::API::HTTP;
 
 =end MetaPOD::JSON
 
-=cut 
+=cut
 
 =head1 SYNOPSIS
 
-This module is mostly a common shared component for a buch of TW MAP API Modules.
+This module is mostly a common shared component for a bunch of L<< C<TribalWarsMap.com>|http://tribalwarsmap.com >> C<API> Modules.
 
-Its just a huge glue layer gluing together 
+Its just a huge glue layer gluing together
 
 =over 4
 
@@ -35,6 +35,8 @@ Its just a huge glue layer gluing together
 =item * L<< C<Path::Tiny>|Path::Tiny >>
 
 =item * L<< C<File::Spec>|File::Spec >>
+
+=back
 
 In order to produce
 
@@ -60,7 +62,7 @@ In order to produce
 use Moo;
 use Path::Tiny qw(path);
 
-=attr tmp_root 
+=attr C<tmp_root>
 
 =cut
 
@@ -73,7 +75,7 @@ has tmp_root => (
   },
 );
 
-=attr tw_suffix
+=attr C<tw_suffix>
 
 =cut
 
@@ -85,7 +87,7 @@ has tw_suffix => (
   },
 );
 
-=attr tw_root
+=attr C<tw_root>
 
 =cut
 
@@ -99,7 +101,7 @@ has tw_root => (
   },
 );
 
-=attr cache_name
+=attr C<cache_name>
 
 =cut
 
@@ -108,7 +110,7 @@ has cache_name => (
   required => 1,
 );
 
-=attr chi
+=attr C<chi>
 
 =cut
 
@@ -126,7 +128,23 @@ has chi => (
   },
 );
 
-=attr mech
+=attr agent
+
+=cut
+
+has agent => (
+  is      => ro =>,
+  lazy    => 1,
+  builder => sub {
+    my ($self) = @_;
+    if ( __PACKAGE__->VERSION ) {
+      return __PACKAGE__ . q[/] . __PACKAGE__->VERSION;
+    }
+    return __PACKAGE__ . q[/dev];
+  },
+);
+
+=attr C<mech>
 
 =cut
 
@@ -134,11 +152,11 @@ has mech => (
   is      => ro => lazy => 1,
   builder => sub {
     require WWW::Mechanize::Cached;
-    return WWW::Mechanize::Cached->new( cache => $_[0]->chi, );
+    return WWW::Mechanize::Cached->new( cache => $_[0]->chi, agent => $_[0]->agent );
   },
 );
 
-=attr ht_tiny
+=attr C<ht_tiny>
 
 =cut
 
@@ -148,10 +166,10 @@ has 'ht_tiny' => (
   builder => sub {
     require HTTP::Tiny::Mech;
     return HTTP::Tiny::Mech->new( mechua => $_[0]->mech, );
-  }
+  },
 );
 
-=method get
+=method C<get>
 
     my $result = $ua->get( $url );
 

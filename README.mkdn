@@ -1,6 +1,6 @@
 # NAME
 
-Net::TribalWarsMap::API::HTTP - HTTP UA For TribalWars Map
+Net::TribalWarsMap::API::HTTP - HTTP User Agent For [`TribalWarsMap.com`](http://tribalwarsmap.com)
 
 # VERSION
 
@@ -8,9 +8,9 @@ version 0.1.0
 
 # SYNOPSIS
 
-This module is mostly a common shared component for a buch of TW MAP API Modules.
+This module is mostly a common shared component for a bunch of [`TribalWarsMap.com`](http://tribalwarsmap.com) `API` Modules.
 
-Its just a huge glue layer gluing together 
+Its just a huge glue layer gluing together
 
 - [`WWW::Mechanize::Cached`](http://search.cpan.org/perldoc?WWW::Mechanize::Cached)
 - [`HTTP::Tiny::Mech`](http://search.cpan.org/perldoc?HTTP::Tiny::Mech)
@@ -18,58 +18,60 @@ Its just a huge glue layer gluing together
 - [`Path::Tiny`](http://search.cpan.org/perldoc?Path::Tiny)
 - [`File::Spec`](http://search.cpan.org/perldoc?File::Spec)
 
-    In order to produce
+In order to produce
 
-    - A Cached HTTP User Agent
-    - With a shared cache in `/tmp/perl-Net-TribalWarsMap-API.cache/`
-    - With a per instance key set for `/tmp/perl-Net-TribalWarsMap-API.cache/*`
+- A Cached HTTP User Agent
+- With a shared cache in `/tmp/perl-Net-TribalWarsMap-API.cache/`
+- With a per instance key set for `/tmp/perl-Net-TribalWarsMap-API.cache/*`
 
-        use Net::TribalWarsMap::API::HTTP;
+    use Net::TribalWarsMap::API::HTTP;
 
-        my $ua = Net::TribalWarsMap::API::HTTP->new(
-            # /tmp/perl-Net-TribalWarsMap-API.cache/foo
-            cache_name => 'foo'
-        );
+    my $ua = Net::TribalWarsMap::API::HTTP->new(
+        # /tmp/perl-Net-TribalWarsMap-API.cache/foo
+        cache_name => 'foo'
+    );
 
-    # METHODS
+# METHODS
 
-    ## get
+## `get`
 
-        my $result = $ua->get( $url );
+    my $result = $ua->get( $url );
 
-    See [`HTTP::Tiny`](http://search.cpan.org/perldoc?HTTP::Tiny) and [`HTTP::Tiny::Mech`](http://search.cpan.org/perldoc?HTTP::Tiny::Mech) for details
+See [`HTTP::Tiny`](http://search.cpan.org/perldoc?HTTP::Tiny) and [`HTTP::Tiny::Mech`](http://search.cpan.org/perldoc?HTTP::Tiny::Mech) for details
 
-    # ATTRIBUTES
+# ATTRIBUTES
 
-    ## tmp\_root 
+## `tmp_root`
 
-    ## tw\_suffix
+## `tw_suffix`
 
-    ## tw\_root
+## `tw_root`
 
-    ## cache\_name
+## `cache_name`
 
-    ## chi
+## `chi`
 
-    ## mech
+## agent
 
-    ## ht\_tiny
+## `mech`
 
-    {
-        "namespace":"Net::TribalWarsMap::API::HTTP",
-        "interface":"class",
-        "inherits":"Moo::Object"
-    }
+## `ht_tiny`
+
+{
+    "namespace":"Net::TribalWarsMap::API::HTTP",
+    "interface":"class",
+    "inherits":"Moo::Object"
+}
 
 
 
-    # AUTHOR
+# AUTHOR
 
-    Kent Fredric <kentfredric@gmail.com>
+Kent Fredric <kentfredric@gmail.com>
 
-    # COPYRIGHT AND LICENSE
+# COPYRIGHT AND LICENSE
 
-    This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
