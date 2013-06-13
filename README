@@ -51,7 +51,7 @@ ATTRIBUTES
   "tw_root"
   "cache_name"
   "chi"
-  agent
+  "agent"
   "mech"
   "ht_tiny"
 AUTHOR

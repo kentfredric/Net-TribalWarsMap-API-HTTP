@@ -183,7 +183,7 @@ See L<< C<HTTP::Tiny>|HTTP::Tiny >> and L<< C<HTTP::Tiny::Mech>|HTTP::Tiny::Mech
 
 =head2 C<chi>
 
-=head2 agent
+=head2 C<agent>
 
 =head2 C<mech>
 
