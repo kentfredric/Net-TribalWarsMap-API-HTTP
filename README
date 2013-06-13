@@ -30,6 +30,8 @@ SYNOPSIS
     *   With a per instance key set for
         "/tmp/perl-Net-TribalWarsMap-API.cache/*"
 
+    Usage:
+
         use Net::TribalWarsMap::API::HTTP;
 
         my $ua = Net::TribalWarsMap::API::HTTP->new(

@@ -71,13 +71,13 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/kentfredric/Net-TribalWarMap-API-HTTP/issues"
+         "web" : "https://github.com/kentfredric/Net-TribalWarsMap-API-HTTP/issues"
       },
-      "homepage" : "https://github.com/kentfredric/Net-TribalWarMap-API-HTTP",
+      "homepage" : "https://github.com/kentfredric/Net-TribalWarsMap-API-HTTP",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/kentfredric/Net-TribalWarMap-API-HTTP.git",
-         "web" : "https://github.com/kentfredric/Net-TribalWarMap-API-HTTP"
+         "url" : "https://github.com/kentfredric/Net-TribalWarsMap-API-HTTP.git",
+         "web" : "https://github.com/kentfredric/Net-TribalWarsMap-API-HTTP"
       }
    },
    "version" : "0.1.0",
