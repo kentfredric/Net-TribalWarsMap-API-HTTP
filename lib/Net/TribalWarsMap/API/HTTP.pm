@@ -75,7 +75,7 @@ has agent => (
     builder => sub {
         my ( $self ) = @_;
         if ( __PACKAGE__->VERSION ){
-            return __PACKAGE__ . '/' . __PACKAGE__->version;
+            return __PACKAGE__ . '/' . __PACKAGE__->VERSION;
         }
         return __PACKAGE__ . '/dev';
     }
