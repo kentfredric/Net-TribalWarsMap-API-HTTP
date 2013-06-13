@@ -84,7 +84,7 @@ has 'ht_tiny' => (
   builder => sub {
     require HTTP::Tiny::Mech;
     return HTTP::Tiny::Mech->new( mechua => $_[0]->mech, );
-  }
+  },
 );
 
 
@@ -113,7 +113,7 @@ version 0.1.0
 
 This module is mostly a common shared component for a bunch of L<< C<TribalWarsMap.com>|http://tribalwarsmap.com >> API Modules.
 
-Its just a huge glue layer gluing together 
+Its just a huge glue layer gluing together
 
 =over 4
 
@@ -156,7 +156,7 @@ See L<< C<HTTP::Tiny>|HTTP::Tiny >> and L<< C<HTTP::Tiny::Mech>|HTTP::Tiny::Mech
 
 =head1 ATTRIBUTES
 
-=head2 tmp_root 
+=head2 tmp_root
 
 =head2 tw_suffix
 
