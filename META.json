@@ -4,7 +4,7 @@
       "Kent Fredric <kentfredric@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.131490",
+   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.131560",
    "license" : [
       "perl_5"
    ],
@@ -38,7 +38,7 @@
             "version" : "0.9901"
          },
          "suggests" : {
-            "Dist::Zilla::PluginBundle::Author::KENTNL" : "v1.7.3"
+            "Dist::Zilla::PluginBundle::Author::KENTNL" : "v1.7.4"
          }
       },
       "runtime" : {
@@ -46,7 +46,7 @@
             "CHI" : "0",
             "File::Spec" : "0",
             "HTTP::Tiny::Mech" : "0",
-            "Moo" : "0",
+            "Moo" : "1.000008",
             "Path::Tiny" : "0",
             "WWW::Mechanize::Cached" : "0",
             "perl" : "v5.10.0",
@@ -65,7 +65,7 @@
    "provides" : {
       "Net::TribalWarsMap::API::HTTP" : {
          "file" : "lib/Net/TribalWarsMap/API/HTTP.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.1.1"
       }
    },
    "release_status" : "stable",
@@ -80,11 +80,11 @@
          "web" : "https://github.com/kentfredric/Net-TribalWarsMap-API-HTTP"
       }
    },
-   "version" : "0.1.0",
+   "version" : "0.1.1",
    "x_BuiltWith" : {
       "modules" : {
          "CHI" : "0.56",
-         "Dist::Zilla::PluginBundle::Author::KENTNL" : "1.7.3",
+         "Dist::Zilla::PluginBundle::Author::KENTNL" : "1.7.4",
          "Dist::Zilla::PluginBundle::Author::KENTNL::Lite" : "NA(possibly not installed)",
          "File::Find" : "1.23",
          "File::Spec" : "3.40",
@@ -92,14 +92,14 @@
          "HTTP::Tiny::Mech" : "0.1.3",
          "Module::Build" : "0.4005",
          "Moo" : "1.002",
-         "Path::Tiny" : "0.022",
+         "Path::Tiny" : "0.024",
          "Pod::Coverage::TrustPod" : "0.100002",
          "Test::CPAN::Changes" : "0.20",
          "Test::CPAN::Meta" : "0.23",
          "Test::More" : "0.98",
          "Test::Pod" : "1.48",
          "Test::Pod::Coverage" : "1.08",
-         "WWW::Mechanize::Cached" : "1.41",
+         "WWW::Mechanize::Cached" : "1.42",
          "perl" : "NA(skipped: perl)",
          "strict" : "1.07",
          "version" : "0.9902",
@@ -120,7 +120,7 @@
          "osname" : "linux"
       },
       "platform" : "linux",
-      "uname" : "Linux 3.9.0-gentoo x86_64 GenuineIntel GNU/Linux"
+      "uname" : "Linux 3.10.0-gentoo x86_64 GenuineIntel GNU/Linux"
    },
    "x_Dist_Zilla" : {
       "perl" : {
@@ -130,7 +130,7 @@
          {
             "class" : "Dist::Zilla::Plugin::Git::NextVersion",
             "name" : "@Author::KENTNL/Git::NextVersion",
-            "version" : "2.013"
+            "version" : "2.014"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaConfig",
@@ -172,7 +172,7 @@
          {
             "class" : "Dist::Zilla::Plugin::Git::GatherDir",
             "name" : "@Author::KENTNL/Git::GatherDir",
-            "version" : "2.013"
+            "version" : "2.014"
          },
          {
             "class" : "Dist::Zilla::Plugin::License",
@@ -305,7 +305,7 @@
          {
             "class" : "Dist::Zilla::Plugin::Author::KENTNL::MinimumPerl",
             "name" : "@Author::KENTNL/Author::KENTNL::MinimumPerl",
-            "version" : "1.7.3"
+            "version" : "1.7.4"
          },
          {
             "class" : "Dist::Zilla::Plugin::Author::KENTNL::Prereqs::Latest::Selective",
@@ -355,27 +355,27 @@
          {
             "class" : "Dist::Zilla::Plugin::Git::Check",
             "name" : "@Author::KENTNL/Git::Check",
-            "version" : "2.013"
+            "version" : "2.014"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Tag",
             "name" : "@Author::KENTNL/Git::Tag/tag_master",
-            "version" : "2.013"
+            "version" : "2.014"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Commit",
             "name" : "@Author::KENTNL/Git::Commit",
-            "version" : "2.013"
+            "version" : "2.014"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::CommitBuild",
             "name" : "@Author::KENTNL/Git::CommitBuild",
-            "version" : "2.013"
+            "version" : "2.014"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Tag",
             "name" : "@Author::KENTNL/Git::Tag/tag_release",
-            "version" : "2.013"
+            "version" : "2.014"
          },
          {
             "class" : "Dist::Zilla::Plugin::UploadToCPAN",
@@ -385,7 +385,7 @@
          {
             "class" : "Dist::Zilla::Plugin::Twitter",
             "name" : "@Author::KENTNL/Twitter",
-            "version" : "0.020"
+            "version" : "0.021"
          },
          {
             "class" : "Dist::Zilla::Plugin::Prereqs",

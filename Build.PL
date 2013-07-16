@@ -17,7 +17,7 @@ my %module_build_args = (
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
   "dist_name" => "Net-TribalWarsMap-API-HTTP",
-  "dist_version" => "0.1.0",
+  "dist_version" => "0.1.1",
   "license" => "perl",
   "module_name" => "Net::TribalWarsMap::API::HTTP",
   "recommends" => {},
@@ -26,7 +26,7 @@ my %module_build_args = (
     "CHI" => 0,
     "File::Spec" => 0,
     "HTTP::Tiny::Mech" => 0,
-    "Moo" => 0,
+    "Moo" => "1.000008",
     "Path::Tiny" => 0,
     "WWW::Mechanize::Cached" => 0,
     "perl" => "v5.10.0",
