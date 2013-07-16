@@ -1,6 +1,6 @@
 Release history for Net-TribalWarsMap-API-HTTP
 
-0.1.1 2013-07-16T03:26:57Z
+0.1.1 2013-07-16T03:27:21Z
  [BugFix]
  - Need recent Moo for builder => sub {}
 
