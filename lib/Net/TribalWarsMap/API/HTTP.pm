@@ -7,14 +7,14 @@ BEGIN {
   $Net::TribalWarsMap::API::HTTP::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $Net::TribalWarsMap::API::HTTP::VERSION = '0.1.0';
+  $Net::TribalWarsMap::API::HTTP::VERSION = '0.1.1';
 }
 
 # ABSTRACT: HTTP User Agent For L<< C<TribalWarsMap.com>|http://tribalwarsmap.com >>
 
 
 
-use Moo;
+use Moo 1.000008;
 use Path::Tiny qw(path);
 
 
@@ -120,7 +120,7 @@ Net::TribalWarsMap::API::HTTP - HTTP User Agent For L<< C<TribalWarsMap.com>|htt
 
 =head1 VERSION
 
-version 0.1.0
+version 0.1.1
 
 =head1 SYNOPSIS
 
