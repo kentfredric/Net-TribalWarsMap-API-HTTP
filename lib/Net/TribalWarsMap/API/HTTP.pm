@@ -61,7 +61,7 @@ Usage:
 
 =cut
 
-use Moo;
+use Moo 1.000008;
 use Path::Tiny qw(path);
 
 =attr C<tmp_root>
